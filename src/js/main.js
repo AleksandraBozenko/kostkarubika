@@ -19,4 +19,12 @@ if ('serviceWorker' in navigator) {
 
 console.log(`Hello world!`);
 
+const hamburger = document.querySelector('.hamburger');
+
+const clicker = () =>{
+  hamburger.classList.toggle('hamburger--active');
+}
+
+hamburger.addEventListener('click', clicker);
+
 
