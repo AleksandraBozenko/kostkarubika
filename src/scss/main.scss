@@ -26,15 +26,22 @@ html {
     &--img{
       margin: auto;
       height: 60px;
+      position: absolute;
+      right: 700px;
     }
     &--input{
       height: 30px;
+      position: absolute;
+      right: 400px;
     }
     &--button{
       height: 30px;
+      position: absolute;
+      right: 400px;
     }
     &--trolley{
-      margin: 0 5vw;
+      position: absolute;
+      right: 5vh;
       height: 30px;
     }
   }
@@ -100,4 +107,8 @@ html {
 }
 .nav--active{
   transform: translateX(-250px);
+}
+.header__up--trolley-active{
+  position: absolute;
+  right: 250px;
 }
