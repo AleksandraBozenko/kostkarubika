@@ -20,9 +20,11 @@ if ('serviceWorker' in navigator) {
 console.log(`Hello world!`);
 
 const hamburger = document.querySelector('.hamburger');
+const navigation = document.querySelector('.nav');
 
 const clicker = () =>{
   hamburger.classList.toggle('hamburger--active');
+  navigation.classList.toggle('nav--active');
 }
 
 hamburger.addEventListener('click', clicker);

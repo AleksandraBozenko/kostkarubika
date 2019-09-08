@@ -1,7 +1,9 @@
+$violet : rgb(139, 114, 185);
+
 @mixin hamburger{
     width: 100%;
     height: 3px;
-    background-color: bisque;
+    background-color: $violet;
     border-radius: 40px;
     position: absolute;
     left: 0;
