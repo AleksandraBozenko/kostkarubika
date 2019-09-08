@@ -22,6 +22,7 @@ console.log(`Hello world!`);
 const hamburger = document.querySelector('.hamburger');
 const navigation = document.querySelector('.nav');
 const trolley = document.querySelector('.header__up--trolley');
+const articlesPreview = document.querySelector('.articles');
 
 const clicker = () =>{
   hamburger.classList.toggle('hamburger--active');
@@ -29,6 +30,7 @@ const clicker = () =>{
 }
 const trolleyClicker = () =>{
   trolley.classList.toggle('header__up--trolley-active');
+  articlesPreview.classList.toggle('articles--active');
 }
 
 hamburger.addEventListener('click', clicker,);

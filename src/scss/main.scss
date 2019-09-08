@@ -24,7 +24,7 @@ html {
     align-items: center;
     margin-top: 2vh;
     &--img{
-      margin: auto;
+     
       height: 60px;
       position: absolute;
       right: 700px;
@@ -43,6 +43,7 @@ html {
       position: absolute;
       right: 5vh;
       height: 30px;
+      cursor: pointer;
     }
   }
   .hamburger{
@@ -111,4 +112,23 @@ html {
 .header__up--trolley-active{
   position: absolute;
   right: 250px;
+}
+.articles{
+  width: 250px;
+  height: 100vh;
+  background-color: $violet;
+  position: absolute;
+  top: 0;
+  right: -250px;
+  display: none;
+}
+.articles--active{
+  position: absolute;
+  right: 0;
+  display: block;
+}
+.header__up--trolley-active
+.header{
+  transform: translateX(500px);
+  background-color: black;
 }
