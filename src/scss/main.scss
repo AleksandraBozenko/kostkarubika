@@ -132,3 +132,13 @@ html {
   transform: translateX(500px);
   background-color: black;
 }
+.shop{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  &__item{
+    width: 30vw;
+    height: 30vh;
+    border: 5px solid $violet;
+  }
+}
