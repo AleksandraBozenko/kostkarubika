@@ -34,6 +34,17 @@ const trolleyClicker = () =>{
 }
 
 hamburger.addEventListener('click', clicker,);
-trolley.addEventListener('click', trolleyClicker)
+trolley.addEventListener('click', trolleyClicker);
+
+
+
+
+const navUp = document.querySelector('.nav--up');
+
+const scrolled = ()=> {
+  navUp.classList.toggle('header--active');
+}
+navUp.window.addEventListener('scrollY', scrolled);
+
 
 
