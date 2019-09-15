@@ -37,6 +37,7 @@ html {
     }
     &--input{
       height: 30px;
+      width: 230px;
       position: absolute;
       right: 400px;
     }
@@ -116,11 +117,20 @@ html {
   left: 0; 
   top: 0;
   transition: transform .2s ease-in-out;
-  
+  &__item{
+    list-style: none;
+    font-size: 1.3em;
+    margin: 4vh auto;
+  }
+  &__item--small{
+    list-style: none;
+    margin: 2vh auto;
+    font-size: .9em;
+  }
 }
 .nav--active{
   transform: translateX(-250px);
-  display: none;
+  // display: none;
 }
 .header__up--trolley-active{
   position: absolute;
@@ -150,10 +160,10 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   &__item{
-    width: 20vw;
-    height: 40vh;
+    width: 22vw;
+    height: 45vh;
     border: 5px solid $violet;
-    margin: 3vh 3vw;
+    margin: 1vh 1vw;
   }
   &__sort{
     grid-column-start: 1;
