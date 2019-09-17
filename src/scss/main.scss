@@ -18,32 +18,35 @@ body{
 }
 .header{
   width: 100%;
-  height: 100vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;   
-  background-color: #061430;
+  background-color: white;
   &__up{
     width:100%;
-    height: 60px;
+    height: 30vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding: 5vh;
     margin-top: 2vh;
+    background-color: #061430;
+    margin: 0;
     &--img{
       height: 60px;
       position: absolute;
       right: 700px;
     }
-    &--input{
-      height: 30px;
-      width: 230px;
-      position: absolute;
-      margin: 400px auto;
-    }
+    // &--input{
+    //   height: 30px;
+    //   width: 230px;
+    //   position: absolute;
+    //   margin: 400px auto;
+    // }
     &--button{
       height: 30px;
       position: absolute;
-      right: 400px;
+      right: 300px;
       cursor: pointer;
       background: $violet;
       border: none;
@@ -51,10 +54,11 @@ body{
     &--trolley{
       position: absolute;
       right: 5vh;
+      
       height: 30px;
       cursor: pointer;
       background: transparent;
-      border: none;
+      border: 2px solid wheat;
     }
   }
   .hamburger{
