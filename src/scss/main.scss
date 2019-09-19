@@ -181,7 +181,6 @@ body{
   &__item{
     width: 22vw;
     height: 45vh;
-    border-bottom: 1px solid white;
     margin: 1vh 1vw;
     display: flex;
     align-items: center;
@@ -213,9 +212,16 @@ body{
     background-color: black;
   }
 }
-
+.footer{
+  height: 50vh;
+  width: 100%;
+  background-color: rgb(168, 144, 144);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 .product{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
