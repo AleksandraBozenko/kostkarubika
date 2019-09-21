@@ -23,6 +23,10 @@ const hamburger = document.querySelector('.hamburger');
 const navigation = document.querySelector('.nav');
 const trolley = document.querySelector('.header__up--trolley');
 const articlesPreview = document.querySelector('.articles');
+const main = document.querySelector('.main');
+const articlesHamburger = document.querySelector('.articles');
+// const shop = document.querySelector('.shop');
+
 
 const clicker = () =>{
   hamburger.classList.toggle('hamburger--active');
@@ -31,10 +35,16 @@ const clicker = () =>{
 const trolleyClicker = () =>{
   trolley.classList.toggle('header__up--trolley-active');
   articlesPreview.classList.toggle('articles--active');
+  // main.classList.toggle('main--active');
 }
+  // articlesHamburger.classList.toggle('main');
+// const articlesHamburgerClicker = () =>{
+//   articlesHamburger.classList.toggle('shop--active');
+// }
 
 hamburger.addEventListener('click', clicker,);
 trolley.addEventListener('click', trolleyClicker);
+articlesHamburger.addEventListener('click', articlesHamburgerClicker);
 
 
 
