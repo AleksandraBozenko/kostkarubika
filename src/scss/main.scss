@@ -224,12 +224,16 @@ body{
 
 .menu{
   width: 100%;
-  height: 50px;
+  height: 8vh;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   &__list{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-around;
+  // align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 &__item{
   list-style: none;
@@ -237,6 +241,19 @@ body{
     text-decoration: none;
   }
 }
+}
+.options{
+  width: 100%;
+  height: 50vh;
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  &__group{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .shop{
@@ -314,15 +331,49 @@ body{
   align-items: center;
   height: 15vh;
 }
-.order__img{
-  margin: auto;
-  position: absolute;
-  left: 5vw;
-}
+
 .order__options{
   display: flex;
   flex-direction: row;
   &--item{
     margin-right: 5vw;
+    padding: 1vw;
+    border-bottom: 5px solid black;
+  }
+}
+.order{
+  width:98%;
+  min-height: 20vh;
+  margin: auto;
+  background-color: red;
+  &__empty{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    background-color: rgb(182, 152, 152);
+  }
+  &__about{
+    &--details{
+      border-bottom: 1px solid black;
+      display: grid;
+      grid-template-columns: 40vw 10vw 10vw 10vw;
+      &-item{
+        margin: auto;
+      }
+    }
+    &--product{
+      border-bottom: 1px solid black;
+      height: 20vh;
+      display: grid;
+      grid-template-columns: 20vw 20vw 10vw 10vw 10vw 2vw;
+      &-item{
+        max-width: 10vw;
+        margin: auto;
+        display:table-cell;
+        vertical-align:middle;
+      }
+    }
   }
 }
