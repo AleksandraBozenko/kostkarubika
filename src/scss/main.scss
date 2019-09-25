@@ -255,7 +255,17 @@ body{
     align-items: center;
   }
 }
-
+.page{
+  padding: 10px;
+  &__skip{
+    font-weight: bold;
+    padding: 10px;
+  }
+  &__input{
+    width: 2vw;
+    text-align: center;
+  }
+}
 .shop{
   width: 100%;
   display: grid;
@@ -290,7 +300,10 @@ body{
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1000;
-  }
+    &--button{
+      width: 100%;
+    }
+    }
 }
 
 .footer{
@@ -345,7 +358,7 @@ body{
   width:98%;
   min-height: 20vh;
   margin: auto;
-  background-color: red;
+  background-color: rgb(221, 168, 168);
   &__empty{
     width: 100%;
     display: flex;
@@ -373,6 +386,16 @@ body{
         margin: auto;
         display:table-cell;
         vertical-align:middle;
+      }
+      &-amount{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      &-input{
+        width: 2vw;
+        text-align: center;
       }
     }
   }
