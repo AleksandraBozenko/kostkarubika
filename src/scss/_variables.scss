@@ -17,3 +17,10 @@ $violet : rgb(158, 131, 207);
   margin: auto;
   height: 40vh;
 }
+
+@mixin center{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}

@@ -53,17 +53,17 @@ body{
       cursor: pointer;
       background: $violet;
       border: none;
-      right: 11vw;
+      right: 8vw;
       
     }
-    &--button{
-      height: 30px;
-      position: absolute;
-      right: 8vw;
-      cursor: pointer;
-      background: $violet;
-      border: none;
-    }
+    // &--button{
+    //   height: 30px;
+    //   position: absolute;
+    //   right: 8vw;
+    //   cursor: pointer;
+    //   background: $violet;
+    //   border: none;
+    // }
     &--trolley{
       position: absolute;
       right: 5vw;
@@ -71,6 +71,7 @@ body{
       cursor: pointer;
       background: transparent;
       border: 2px solid wheat;
+      z-index: 3;
     }
   }
   .hamburger{
@@ -146,7 +147,7 @@ body{
 }
 .nav--active{
   transform: translateX(-250px);
-  z-index: 4;
+  // z-index: 2;
   // display: none;
 }
 .header__up--trolley-active{
@@ -158,6 +159,7 @@ body{
   height: 100%;
   background-color: white;
   position: absolute;
+  z-index: 3;
   top: 0;
   right: 0;
   display: none;
@@ -190,10 +192,39 @@ body{
   &__skip{
     width: 250px;
     height: 60px;
-    background-color: grey;
+    background-color: blue;
     border: none;
     position: absolute;
     margin: auto;
+    &--link{
+      list-style: none;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+.others{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-content: center;
+  &__search{
+    @include center;
+    &--input{
+      border: 2px solid black;
+      height: 5vh;
+      width: 25vw;
+    }
+    &--button{
+      height: 5vh;
+    }
+    &--filters{
+      width: 25vw;
+      background-color: black;
+      color: white;
+      border:none;
+      height: 7vh;
+    }
   }
 }
 .articles--active{
@@ -240,14 +271,23 @@ body{
   &--text{
     text-decoration: none;
   }
+  &--text:hover{
+    color: blue;
+    cursor: pointer;
+    transform: translate;
+  }
 }
 }
 .options{
+  position: relative;
+  z-index: -1;
+  // top: -70vh;
   width: 100%;
-  height: 50vh;
-  background-color: red;
+  min-height: 40vh;
+  background-color: blue;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  transition: translateY(70vh);
   &__group{
     display:flex;
     flex-direction: column;
@@ -256,7 +296,7 @@ body{
   }
 }
 .page{
-  padding: 10px;
+  @include center;
   &__skip{
     font-weight: bold;
     padding: 10px;
@@ -285,27 +325,40 @@ body{
     &--price{
       padding: .5vw;
     }
-    &--avaliable{
-      padding: .5vw;
-      cursor: pointer;
-    }
-    &--unavaliable{
-      padding: .5vw;
-      cursor: pointer;
-      display: none;
-    }
+    // &--avaliable{
+    //   padding: .5vw;
+    //   cursor: pointer;
+    // }
   }
   &__sort{
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1000;
-    &--button{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // &--button{
+    //   width: 25vw;
+    //   background-color: black;
+    //   color: white;
+    //   border:none;
+    //   height: 7vh;
+    // }
+    &--item{
+      border-bottom: 1px solid black;
       width: 100%;
+      padding: 10px;
     }
     }
 }
-
+.shop__sort-active{
+  margin-top: -20px;
+  background-color: aqua;
+}
+.others__search--filters-active{
+  background-color: red;
+}
 .footer{
   height: 30vh;
   width: 100%;
@@ -336,6 +389,16 @@ body{
 .product{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  &__about{
+    &--avaliable{
+      border: none;
+      background-color: blue;
+      color: white;
+      width: 25vh;
+      height: 7vh;
+      cursor: pointer;
+    }
+  }
 }
 //TROLLEY.HTML
 .order__header{
@@ -351,7 +414,7 @@ body{
   &--item{
     margin-right: 5vw;
     padding: 1vw;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid blue;
   }
 }
 .order{

@@ -17,18 +17,18 @@ if ('serviceWorker' in navigator) {
 // Niżej możesz pisać.
 
 
-console.log(`Hello world!`);
-
 const hamburger = document.querySelector('.hamburger');
 const navigation = document.querySelector('.nav');
 const trolley = document.querySelector('.header__up--trolley');
 const articlesPreview = document.querySelector('.articles');
 const main = document.querySelector('.main');
 const articlesHamburger = document.querySelector('.articles');
+// const trolleyAdd = document.querySelector('.product__about--avaliable');
 // const shop = document.querySelector('.shop');
 
 
 const clicker = () =>{
+  // trolleyAdd.classList.toggle('product__about--avaliable');
   hamburger.classList.toggle('hamburger--active');
   navigation.classList.toggle('nav--active');
 }
@@ -49,12 +49,18 @@ articlesHamburger.addEventListener('click', articlesHamburgerClicker);
 
 
 
-const navUp = document.querySelector('.nav--up');
+// const navUp = document.querySelector('.nav--up');
 
-const scrolled = ()=> {
-  navUp.classList.toggle('header--active');
+// const scrolled = ()=> {
+//   navUp.classList.toggle('header--active');
+// }
+// navUp.window.addEventListener('scrollY', scrolled);
+
+const filters = document.querySelector('.others__search--filters');
+const sort = document.querySelector('.shop__sort');
+
+const filtersClicker = () =>{
+  filters.classList.toggle('others__search--filters-active');
+  sort.classList.toggle('shop__sort-active');
 }
-navUp.window.addEventListener('scrollY', scrolled);
-
-
-
+filters.addEventListener('click', filtersClicker);
