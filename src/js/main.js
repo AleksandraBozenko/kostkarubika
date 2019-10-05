@@ -16,6 +16,11 @@ if ('serviceWorker' in navigator) {
 
 // Niżej możesz pisać.
 
+const button = document.querySelector(`.others__search--filters`) ;
+button.addEventListener('click', (e) => {
+  const sort = document.querySelector('.shop__sort');
+  sort.classList.toggle('shop__sort-active');
+});
 
 
 
@@ -69,11 +74,11 @@ articlesHamburger.addEventListener('click', articlesHamburgerClicker);
 // }
 // filters.addEventListener('click', filtersClicker);
 
-const button = document.querySelector(`.others__search--filters`) ;
-button.addEventListener('click', (e) => {
-  const sort = document.querySelector('.shop__sort');
-  sort.classList.toggle('shop__sort-active');
-});
+// const button = document.querySelector(`.others__search--filters`) ;
+// button.addEventListener('click', (e) => {
+//   const sort = document.querySelector('.shop__sort');
+//   sort.classList.toggle('shop__sort-active');
+// });
 
 const producent = document.querySelector('.menu__item--text');
 const producentList = document.querySelector('.options__producent');

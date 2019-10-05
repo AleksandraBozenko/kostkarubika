@@ -345,7 +345,7 @@ body{
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1000;
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
     
@@ -365,7 +365,7 @@ body{
     }
 }
 .shop__sort-active{
-  background-color: red;
+  display: flex;
 }
 // .others__search--filters-active{
 //   background-color: red;
