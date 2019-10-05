@@ -60,16 +60,20 @@ articlesHamburger.addEventListener('click', articlesHamburgerClicker);
 // }
 // navUp.window.addEventListener('scrollY', scrolled);
 
-const filters = document.querySelector('.others__search--filters');
-const sort = document.querySelector('.shop__sort');
+// const filters = document.querySelector('.others__search--filters');
+// const sort = document.querySelector('.shop__sort');
 
-const filtersClicker = () =>{
-  filters.classList.toggle('others__search--filters');
+// const filtersClicker = () =>{
+//   filters.classList.toggle('others__search--filters');
+//   sort.classList.toggle('shop__sort-active');
+// }
+// filters.addEventListener('click', filtersClicker);
+
+const button = document.querySelector(`.others__search--filters`) ;
+button.addEventListener('click', (e) => {
+  const sort = document.querySelector('.shop__sort');
   sort.classList.toggle('shop__sort-active');
-}
-filters.addEventListener('click', filtersClicker);
-
-
+});
 
 const producent = document.querySelector('.menu__item--text');
 const producentList = document.querySelector('.options__producent');

@@ -225,6 +225,7 @@ body{
       color: white;
       border:none;
       height: 7vh;
+      cursor: pointer;
     }
   }
 }
@@ -347,7 +348,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    display: none;
+    
     // &--button{
     //   width: 25vw;
     //   background-color: black;
@@ -359,12 +360,12 @@ body{
       border-bottom: 1px solid black;
       width: 100%;
       padding: 10px;
+    
     }
     }
 }
 .shop__sort-active{
-  
-  display: block;
+  background-color: red;
 }
 // .others__search--filters-active{
 //   background-color: red;
