@@ -17,21 +17,25 @@ if ('serviceWorker' in navigator) {
 // Niżej możesz pisać.
 
 
-const hamburger = document.querySelector('.hamburger');
-const navigation = document.querySelector('.nav');
-const trolley = document.querySelector('.header__up--trolley');
-const articlesPreview = document.querySelector('.articles');
-const main = document.querySelector('.main');
-const articlesHamburger = document.querySelector('.articles');
+
+
+// const main = document.querySelector('.main');
+// const articlesHamburger = document.querySelector('.articles');
 // const trolleyAdd = document.querySelector('.product__about--avaliable');
 // const shop = document.querySelector('.shop');
 
+const hamburger = document.querySelector('.hamburger');
+const navigation = document.querySelector('.nav');
 
 const clicker = () =>{
   // trolleyAdd.classList.toggle('product__about--avaliable');
   hamburger.classList.toggle('hamburger--active');
   navigation.classList.toggle('nav--active');
 }
+
+const trolley = document.querySelector('.header__up--trolley');
+const articlesPreview = document.querySelector('.articles');
+
 const trolleyClicker = () =>{
   trolley.classList.toggle('header__up--trolley-active');
   articlesPreview.classList.toggle('articles--active');
@@ -60,7 +64,19 @@ const filters = document.querySelector('.others__search--filters');
 const sort = document.querySelector('.shop__sort');
 
 const filtersClicker = () =>{
-  filters.classList.toggle('others__search--filters-active');
+  filters.classList.toggle('others__search--filters');
   sort.classList.toggle('shop__sort-active');
 }
 filters.addEventListener('click', filtersClicker);
+
+
+
+const producent = document.querySelector('.menu__item--text');
+const producentList = document.querySelector('.options__producent');
+
+const slide = () =>{
+  // trolleyAdd.classList.toggle('product__about--avaliable');
+  // producent.classList.toggle('menu__item--text');
+  navigation.classList.toggle('options__producent--active');
+}
+producent.addEventListener('click', slide);
