@@ -24,6 +24,8 @@ button.addEventListener('click', (e) => {
 
 
 
+
+
 // const main = document.querySelector('.main');
 // const articlesHamburger = document.querySelector('.articles');
 // const trolleyAdd = document.querySelector('.product__about--avaliable');

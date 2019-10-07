@@ -13,7 +13,9 @@ body{
   background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
-
+button{
+  cursor: pointer;
+}
 .main--active{
   background-color: black;
   display: none;
@@ -38,9 +40,6 @@ body{
     margin-top: 2vh;
     background-color: white;
     margin: 0;
-    &--img{
-   
-    }
     // &--input{
     //   height: 30px;
     //   width: 230px;
@@ -209,10 +208,12 @@ body{
   justify-content: space-between;
   align-content: center;
   align-content: center;
+  padding: 10px;
   &__search{
     @include center;
     &--input{
-      border: 2px solid black;
+      border: none;
+      border-bottom: 1px solid black;
       height: 5vh;
       width: 25vw;
     }
@@ -220,7 +221,7 @@ body{
       height: 5vh;
     }
     &--filters{
-      width: 25vw;
+      width: 23vw;
       background-color: black;
       color: white;
       border:none;
@@ -329,6 +330,7 @@ body{
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    background-color:rgb(204, 185, 185);
     &--description{
       padding: .5vw;
     }
@@ -424,22 +426,24 @@ body{
   flex-direction: row;
   &--item{
     margin-right: 5vw;
-    padding: 1vw;
-    border-bottom: 5px solid blue;
+    padding: 1vw; 
+    &-active{
+      border-bottom: 5px solid blue;
+    }
   }
 }
 .order{
   width:98%;
   min-height: 20vh;
   margin: auto;
-  background-color: rgb(221, 168, 168);
+ 
   &__empty{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 5vh;
-    background-color: rgb(182, 152, 152);
+    
   }
   &__about{
     &--details{
@@ -473,6 +477,27 @@ body{
       }
     }
   }
+  &__sum{
+    width: 30%;
+    padding: 10px;
+    &--box{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    &--price{
+      margin-left: 5vw;
+      &-all{
+        color: blue;
+        font-weight: 900;
+      }
+    }
+  }
+  &__skip{
+    background-color: blue;
+    border: none;
+    width: 11vw;
+    height: 5vh;
+  }
 }
 .log{
   display: flex;
@@ -503,7 +528,7 @@ body{
 label{
   padding: 10px;
 }
-input{
+.input-log{
   margin-right: 60%;
   border: none;
   border-bottom: 1px solid black;
