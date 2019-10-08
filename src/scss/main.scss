@@ -68,7 +68,7 @@ button{
       right: 5vw;
       height: 30px;
       cursor: pointer;
-      background: transparent;
+      background: none;
       border: 2px solid wheat;
       z-index: 3;
       top: 5vh;
@@ -153,6 +153,7 @@ button{
 .header__up--trolley-active{
   position: fixed;
   right: 30vw;
+  z-index: 3;
 }
 .articles{
   width: 30vw;
@@ -190,12 +191,12 @@ button{
   // }
   // }
   &__skip{
-    width: 250px;
-    height: 60px;
+    width: 20vw;
+    height: 6vh;
     background-color: blue;
     border: none;
     position: absolute;
-    margin: auto;
+    margin: 20vw 0;
     &--link{
       list-style: none;
       text-decoration: none;
@@ -384,6 +385,13 @@ button{
     &--text{
       margin: 2px;
     }
+    &--link{
+      text-decoration: none;
+      color: black;
+    }
+    &--link:hover{
+      color: blue;
+    }
   }
   &__about{
     @include footer;
@@ -396,6 +404,24 @@ button{
     &--text{
       margin: 2px;
     }
+  }
+}
+.info{
+  width: 100%;
+  @include center;
+  padding: 5vw;
+  &__header{
+    width: 50%;
+    padding: 2vw;
+    @include center;
+    &--title{
+      max-width: 30%;
+      border-bottom: 1px solid black;
+    }
+  }
+  &__content{
+    width: 90%;
+    
   }
 }
 //PRODUCT.HTML
