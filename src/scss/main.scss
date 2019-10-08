@@ -409,13 +409,13 @@ button{
 .info{
   width: 100%;
   @include center;
-  padding: 5vw;
+  flex-direction: column;
+  padding: 2vw;
   &__header{
-    width: 50%;
+   
     padding: 2vw;
-    @include center;
     &--title{
-      max-width: 30%;
+      margin: auto;
       border-bottom: 1px solid black;
     }
   }
