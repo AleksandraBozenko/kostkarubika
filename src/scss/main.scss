@@ -152,8 +152,9 @@ button{
 }
 .header__up--trolley-active{
   position: fixed;
-  right: 30vw;
-  z-index: 3;
+  margin-top: -1.5vh;
+  margin-right: 22vw;
+  z-index: 10;
 }
 .articles{
   width: 30vw;
@@ -374,7 +375,7 @@ button{
 //   background-color: red;
 // }
 .footer{
-  height: 30vh;
+  min-height: 50vh;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -412,10 +413,9 @@ button{
   flex-direction: column;
   padding: 2vw;
   &__header{
-   
     padding: 2vw;
     &--title{
-      margin: auto;
+      padding: 2vw;
       border-bottom: 1px solid black;
     }
   }
