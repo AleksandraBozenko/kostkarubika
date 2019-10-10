@@ -164,7 +164,7 @@ button{
 .header__up--trolley-active{
   position: fixed;
   margin-top: -1.5vh;
-  margin-right: 22vw;
+  margin-right: 21vw;
   z-index: 10;
 }
 .articles{
@@ -575,12 +575,15 @@ button{
   justify-content: space-around;
   &__login{
     width: 50%;
-    padding: 40px;
+    padding: 10px;
+    @include center;
+    flex-direction: column;
     &--button{
       border: none;
       background-color: blue;
       width: 12vw;
       height: 6vh;
+      
     }
   }
   &__register{
