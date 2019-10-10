@@ -333,11 +333,15 @@ button{
     justify-content: center;
     flex-direction: column;
     background-color:rgb(204, 185, 185);
+    &--img{
+      height: 25vh;
+      width: 100%;
+    }
     &--description{
-      padding: .5vw;
+      margin-bottom: 1vh;
     }
     &--price{
-      padding: .5vw;
+      margin-bottom: .5vh;
     }
     // &--avaliable{
     //   padding: .5vw;
