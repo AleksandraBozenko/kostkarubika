@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Site title</title>
+    <meta name="description" content="Description" />
+<!-- Opisy -->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="assets/pwa/icons/icon-192x192.png"
+    />
+    <!-- Ikona -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/pwa/icons/icon-192x192.png"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="articles">
+        <h2 class="articles__header">TWÓJ KOSZYK</h2>
+            <div class="articles__about"> 
+                <div class="articles__about--product">
+                    <span class="articles__about--product-item"><img class="articles__about--product-img" src="/assets/img/user.svg" alt="produkt do  kupienia"></span>
+                    <p class="articles__about--product-item">NAZWA</p>
+                    <p class="articles__about--product-item"><span class="articles__about--product-item articles__about--product-amount">1</span>xSZT.</p>
+                    <p class="articles__about--product-item">29,99 zł</p>
+                    <p class="articles__about--product-item"><button class="articles__about--product-delete">x</button></p>
+                  </div>
+            </div>
+        <button class="articles__skip"><a class="articles__skip--link" href="trolley.html">PRZEJDŹ DO KOSZYKA</a></button>
+      </div>
+    <main class="main">
+    <header class="header header--active">
+      <div class="header__up">
+        <div class="nav nav--active nav--up">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__item--link">PRODUCENT</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item--link">SPEEDCUBING</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item--link">SPEEDSTACKING</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item--link">KOSZULKI</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item--link">NAKLEJKI</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item--link">NAJNOWSZE</a>
+          </li>
+        </ul>
+      </div>
+        <button class="hamburger">
+          <span class="hamburger__box">
+            <span class="hamburger__box--item"></span>
+          </span>
+        </button>
+      <a href="index.html">
+        <img class="header__up--img" src="/assets/img/logo.png" alt="logo">
+      </a>
+      
+    </header>
+        </div>
+        
+     
+
+    
+      
+      <section class="others">
+      <button class="others__search--filters">FILTRY</button>
+      <div class="others__search">
+      <input class="others__search--input" type="search" name="input" placeholder="szukaj w sklepie">
+      <button class="others__search--button"><img class="others__search--button-icon" src="/assets/img/search.svg" alt="szukaj"></button>
+    </div>
+  </section>
+
+   
+    
+  </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
