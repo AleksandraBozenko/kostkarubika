@@ -40,11 +40,11 @@ const clicker = () =>{
   navigation.classList.toggle('nav--active');
 }
 
-const trolley = document.querySelector('.header__up--trolley');
+const trolley = document.querySelector('.trolley');
 const articlesPreview = document.querySelector('.articles');
 
 const trolleyClicker = () =>{
-  trolley.classList.toggle('header__up--trolley-active');
+  trolley.classList.toggle('trolley-active');
   articlesPreview.classList.toggle('articles--active');
   // main.classList.toggle('main--active');
 }
