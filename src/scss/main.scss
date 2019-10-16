@@ -379,7 +379,7 @@ button{
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    background-color:rgb(204, 185, 185);
+    background-color:$opacityblue;
     &--img{
       height: 25vh;
       width: 100%;
@@ -653,6 +653,16 @@ label{
       height: 30px;;
     }
   }
+}
+.trolley{
+  border: none;
+  background-color: transparent;
+  @include center;
+}
+.trolley-active{
+  border: none;
+  background-color: transparent;
+  @include center;
 }
 @media (max-width:900px){
   .menu{

@@ -40,11 +40,11 @@ const clicker = () =>{
   navigation.classList.toggle('nav--active');
 }
 
-const trolley = document.querySelector('.trolley');
+const trolley = document.querySelector('.header__up--trolley');
 const articlesPreview = document.querySelector('.articles');
 
 const trolleyClicker = () =>{
-  trolley.classList.toggle('trolley-active');
+  trolley.classList.toggle('header__up--trolley-active');
   articlesPreview.classList.toggle('articles--active');
   // main.classList.toggle('main--active');
 }
@@ -52,9 +52,17 @@ const trolleyClicker = () =>{
 // const articlesHamburgerClicker = () =>{
 //   articlesHamburger.classList.toggle('shop--active');
 // }
+const trolleyMobile = document.querySelector('.trolley');
+
+const trolleyClickerMobile = () =>{
+  trolleyMobile.classList.toggle('trolley-active');
+  articlesPreview.classList.toggle('articles--active');
+  // main.classList.toggle('main--active');
+}
 
 hamburger.addEventListener('click', clicker,);
 trolley.addEventListener('click', trolleyClicker);
+trolleyMobile.addEventListener('click', trolleyClickerMobile);
 articlesHamburger.addEventListener('click', articlesHamburgerClicker);
 
 
